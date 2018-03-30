@@ -1,3 +1,5 @@
-#define MQTT_PASSWORD "mysecurepassword"
-#define WIFI_PASSWORD "password1234"
 #define WIFI_SSID "Home Wifi"
+#define WIFI_PASSWORD "password1234"
+#define MQTT_SERVER "openhabian"
+#define MQTT_PASSWORD "mysecurepassword"
+#define MQTT_USER "openhab"

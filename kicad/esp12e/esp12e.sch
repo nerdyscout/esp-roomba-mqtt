@@ -1,0 +1,142 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L RF_Module:ESP-12E U?
+U 1 1 5ABE583B
+P 5200 3800
+F 0 "U?" H 4450 4900 50  0000 L CNN
+F 1 "ESP-12E" H 4450 4800 50  0000 L CNN
+F 2 "RF_Module:ESP-12E" H 5200 4050 50  0001 C CNN
+F 3 "http://wiki.ai-thinker.com/_media/esp8266/docs/aithinker_esp_12f_datasheet_en.pdf" H 4850 4100 50  0001 C CNN
+	1    5200 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5ABE5A62
+P 5200 5150
+F 0 "#PWR?" H 5200 4900 50  0001 C CNN
+F 1 "GND" H 5205 4977 50  0000 C CNN
+F 2 "" H 5200 5150 50  0001 C CNN
+F 3 "" H 5200 5150 50  0001 C CNN
+	1    5200 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5ABE5AD5
+P 3500 2750
+F 0 "R?" H 3570 2796 50  0000 L CNN
+F 1 "10k" H 3570 2705 50  0000 L CNN
+F 2 "" V 3430 2750 50  0001 C CNN
+F 3 "~" H 3500 2750 50  0001 C CNN
+	1    3500 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5ABE5DD8
+P 3200 2750
+F 0 "R?" H 3270 2796 50  0000 L CNN
+F 1 "10k" H 3270 2705 50  0000 L CNN
+F 2 "" V 3130 2750 50  0001 C CNN
+F 3 "~" H 3200 2750 50  0001 C CNN
+	1    3200 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 3000 3500 3000
+Wire Wire Line
+	3500 3000 3500 2900
+Wire Wire Line
+	4300 3200 3200 3200
+Wire Wire Line
+	3200 3200 3200 2900
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5ABE6018
+P 3200 2350
+F 0 "#PWR?" H 3200 2200 50  0001 C CNN
+F 1 "+3.3V" H 3215 2523 50  0000 C CNN
+F 2 "" H 3200 2350 50  0001 C CNN
+F 3 "" H 3200 2350 50  0001 C CNN
+	1    3200 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5ABE6030
+P 3500 2350
+F 0 "#PWR?" H 3500 2200 50  0001 C CNN
+F 1 "+3.3V" H 3515 2523 50  0000 C CNN
+F 2 "" H 3500 2350 50  0001 C CNN
+F 3 "" H 3500 2350 50  0001 C CNN
+	1    3500 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5ABE6041
+P 5200 2350
+F 0 "#PWR?" H 5200 2200 50  0001 C CNN
+F 1 "+3.3V" H 5215 2523 50  0000 C CNN
+F 2 "" H 5200 2350 50  0001 C CNN
+F 3 "" H 5200 2350 50  0001 C CNN
+	1    5200 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 2350 5200 2700
+Wire Wire Line
+	3500 2600 3500 2350
+Wire Wire Line
+	3200 2350 3200 2600
+Wire Wire Line
+	5200 4900 5200 5150
+$Comp
+L Transistor_BJT:BC547 Q?
+U 1 1 5ABE6211
+P 7500 3900
+F 0 "Q?" H 7691 3946 50  0000 L CNN
+F 1 "BC547" H 7691 3855 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 7700 3825 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 7500 3900 50  0001 L CNN
+	1    7500 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 3900 6100 3900
+$Comp
+L power:GND #PWR?
+U 1 1 5ABE6324
+P 7600 5150
+F 0 "#PWR?" H 7600 4900 50  0001 C CNN
+F 1 "GND" H 7605 4977 50  0000 C CNN
+F 2 "" H 7600 5150 50  0001 C CNN
+F 3 "" H 7600 5150 50  0001 C CNN
+	1    7600 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 5150 7600 4100
+Text GLabel 8100 3500 2    50   Input ~ 0
+Roomba_RxD
+Wire Wire Line
+	7600 3500 7600 3700
+Wire Wire Line
+	7600 3500 8100 3500
+NoConn ~ 6100 3500
+$EndSCHEMATC
