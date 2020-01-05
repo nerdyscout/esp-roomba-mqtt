@@ -1,13 +1,13 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Connector:Mini-DIN-7
+# Connector_Mini-DIN-7
 #
-DEF Connector:Mini-DIN-7 J 0 40 Y Y 1 F N
+DEF Connector_Mini-DIN-7 J 0 40 Y Y 1 F N
 F0 "J" 200 200 50 H V C CNN
-F1 "Connector:Mini-DIN-7" 0 -250 50 H V C CNN
+F1 "Connector_Mini-DIN-7" 0 -250 50 H V C CNN
 F2 "" -10 -10 50 V I C CNN
-F3 "" -10 -10 50 V I C CNN
+F3 "http://service.powerdynamics.com/ec/Catalog17/Section%2011.pdf" -10 -10 50 V I C CNN
 $FPLIST
  MINI?DIN*
 $ENDFPLIST
@@ -43,13 +43,13 @@ X ~ 7 -300 100 100 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:R_US
+# Device_R_US
 #
-DEF Device:R_US R 0 0 N Y 1 F N
+DEF Device_R_US R 0 0 N Y 1 F N
 F0 "R" 100 0 50 V V C CNN
-F1 "Device:R_US" -100 0 50 V V C CNN
+F1 "Device_R_US" -100 0 50 V V C CNN
 F2 "" 40 -10 50 V I C CNN
-F3 "" 0 0 50 H I C CNN
+F3 "~" 0 0 50 H I C CNN
 $FPLIST
  R_*
 $ENDFPLIST
@@ -64,14 +64,13 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# RF_Module:ESP-12E
+# RF_Module_ESP-12E
 #
-DEF RF_Module:ESP-12E U 0 20 Y Y 1 F N
+DEF RF_Module_ESP-12E U 0 20 Y Y 1 F N
 F0 "U" -500 750 50 H V L CNN
-F1 "RF_Module:ESP-12E" 500 750 50 H V R CNN
+F1 "RF_Module_ESP-12E" 500 750 50 H V R CNN
 F2 "RF_Module:ESP-12E" 0 0 50 H I C CNN
-F3 "" -350 100 50 H I C CNN
-ALIAS ESP-12F
+F3 "http://wiki.ai-thinker.com/_media/esp8266/esp8266_series_modules_user_manual_v1.1.pdf" -350 100 50 H I C CNN
 $FPLIST
  ESP?12*
 $ENDFPLIST
@@ -102,11 +101,11 @@ X CS0 9 -600 0 100 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# mylib:VOLT_REG
+# esp-roomba-mqtt-rescue_VOLT_REG-mylib
 #
-DEF mylib:VOLT_REG U 0 40 Y Y 1 F N
+DEF esp-roomba-mqtt-rescue_VOLT_REG-mylib U 0 40 Y Y 1 F N
 F0 "U" -250 300 50 H V C CNN
-F1 "mylib:VOLT_REG" 100 300 50 H V C CNN
+F1 "esp-roomba-mqtt-rescue_VOLT_REG-mylib" 100 300 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -117,29 +116,13 @@ X GND 3 0 -250 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# power:+3.3V
+# power_Earth
 #
-DEF power:+3.3V #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power:+3.3V" 0 140 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-ALIAS +3.3V
-DRAW
-P 2 0 1 0 -30 50 0 100 N
-P 2 0 1 0 0 0 0 100 N
-P 2 0 1 0 0 100 30 50 N
-X +3V3 1 0 0 0 U 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# power:Earth
-#
-DEF ~power:Earth #PWR 0 0 Y Y 1 F P
+DEF power_Earth #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -250 50 H I C CNN
-F1 "power:Earth" 0 -150 50 H I C CNN
+F1 "power_Earth" 0 -150 50 H I C CNN
 F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
+F3 "~" 0 0 50 H I C CNN
 DRAW
 P 2 0 1 0 -25 -75 25 -75 N
 P 2 0 1 0 -5 -100 5 -100 N
